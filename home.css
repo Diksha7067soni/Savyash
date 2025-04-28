@@ -1,0 +1,352 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+main{
+    margin-top: 140px;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+h2 {
+    background-color: #f8f8ff; /* halka light grey ya koi bhi color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #900C3F;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+#nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    float: right;
+    width: 100%;
+
+}
+#logo{
+    height:100px;
+}
+#nav_links{
+    display:flex ;
+    justify-content: space-evenly;
+    font-size: 16px;
+    width: 75%;
+}
+#nav_links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 14%;
+    height: 40px;
+    text-decoration: none;
+    color: #900C3F;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+#nav_links :hover{
+    color:black;
+    border: 2PX solid #900C3F;
+    box-shadow: 4px 6px 8px rgba(211, 211, 211, 0.8);
+    background-color: #f8f4f4;
+
+}
+#icons{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+cursor: pointer;
+}
+#icons span{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 3px;
+    color: #900C3F;
+}
+#icons :hover{
+    color:black;
+    rotate: 360deg;
+    transition: all 1.5s ease;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 30px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:rgba(218, 194, 194, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    text-align:center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color:#900C3F;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color:#581845;
+}
+
+.btn-primary {
+    background: #581845;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background:#b5a4f0;
+}
+.section {
+    padding: 70px 0;
+  }
+  
+  .section-light {
+    padding: 70px 0;
+    background: #ffffff;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #581845;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .program-card {
+    background: #dad6e9;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 200px;
+    transition: transform 0.3s;
+    height: 150px;
+  }
+  .program-card:hover{
+    transform: translateY(-12px);
+    background-color: #e6e3f0;
+    box-shadow: 8px 16px 32px rgba(0,0,0,0.3);
+  }
+  .program-card h3{
+    color: #C70039;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  
+  .therapists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin: 40px 15px 0px 15px;
+}
+
+.therapist-card {
+    background: #f8f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.therapist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    background-color: #e6e6ff;
+}
+
+.therapist-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.therapist-card h3 {
+    color: #db105e;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.therapist-card p {
+    color: #2c2929;
+    font-size: 14px;
+}
+footer {
+    background-color: #900C3F;
+    color: #f0f0f0;
+    padding: 50px 20px 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #f8d7da;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+}
+.footer-socials a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+.footer-socials a i {
+    font-size: 2rem;
+    transition: color 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.footer-socials a i:hover {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    transition: all 0.5s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f0f0f0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #f0f0f0;
+    margin: 20px 0;
+}
+
